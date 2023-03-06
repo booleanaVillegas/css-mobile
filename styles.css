@@ -1,0 +1,350 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li,
+button,
+h1,
+h2,
+h3,
+p {
+    font-family: helvetica;
+}
+
+header {
+    background-color: #ccc;
+    height: 70px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-mobile{
+    display: none;
+}
+
+#logo {
+    margin: 0;
+    height: 100%;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#main-nav {
+    width: 300px;
+    height: 100%;
+}
+
+li.nav-item {
+    border-bottom: 1px solid rgba(46, 60, 84, 0);
+    transition: 0.5s;
+    margin: 8px;
+    color: #2e3c54;
+}
+
+li.nav-item:hover {
+    border-bottom: 1px solid #2e3c54;
+    color: black;
+    cursor: pointer;
+}
+
+#main-nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-button {
+    padding: 10px 24px;
+    color: white;
+    background-color: #2e3c54;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.primary-button:hover {
+    background-color: black;
+}
+
+#introduction {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 50pt;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+#presentation-images {
+    background-color: white;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-container {
+    margin-top: -100px;
+    display: flex;
+}
+
+.square-img {
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+}
+
+.square-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.logos-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.client-logo {
+    margin: 20px;
+}
+
+.client-logo img {
+    width: 200px;
+}
+
+#building-better {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+h2 {
+    font-size: 20pt;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.feature {
+    width: 300px;
+    margin: 0 16px;
+}
+
+.texts-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+/* -------------- ESTILOS MOBILE */
+
+@media (max-width: 768px) {
+    .imgs-container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .logos-container {
+        flex-direction: column;
+    }
+    .texts-container {
+        flex-direction: column;
+    }
+
+    #header-mobile{
+        display: flex;
+    }
+
+    #header-desktop{
+        display: none;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    #building-better {
+        padding: 20px;
+    }
+}
+
+/* ------ Estilos Tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .square-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .feature {
+        width: 200px;
+    }
+  }
